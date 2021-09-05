@@ -20,7 +20,7 @@
 
   <div class="field">
     <%= f.label :gender_id %><br />
-    <%= f.text_area :gender_id, autofocus: true, autocomplete: "gender_id" %>
+    <%= f.collection_select(:gender_id, Gender.all, :id, :name, {}, {class:"gender-select"})  %>
   </div>
 
   <div class="field">
