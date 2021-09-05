@@ -1,0 +1,80 @@
+<mxfile host="65bd71144e">
+    <diagram id="OwgL1q6MllxL9iL4HJSt" name="ページ1">
+        <mxGraphModel dx="312" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERoneToMany;endFill=0;startArrow=ERone;startFill=0;" parent="1" source="2" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="2" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="325" y="230"/>
+                            <mxPoint x="325" y="295"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="2" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="180" y="370"/>
+                            <mxPoint x="325" y="370"/>
+                            <mxPoint x="325" y="503"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERoneToMany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="2" target="24">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="60" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="230" y="30"/>
+                            <mxPoint x="740" y="30"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="Usersテーブル" style="swimlane;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="70" width="200" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="ニックネーム:nickname&lt;br&gt;氏名:name&lt;br&gt;メール:email&lt;br&gt;パスワード:encrypted_password&lt;br&gt;年齢:age&lt;br&gt;性別:gender&lt;br&gt;所属:occupation&lt;br&gt;ハンドル:handle&lt;br&gt;リム:rim&lt;br&gt;弦:bowstring&lt;br&gt;矢:arrow&lt;br&gt;その他弓具:other&lt;br&gt;自己紹介文:introduction" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="2" vertex="1">
+                    <mxGeometry x="5" y="30" width="190" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="6" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;" edge="1" parent="1" source="6" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Diariesテーブル" style="swimlane;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="70" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="日付:date&lt;br&gt;場所:place&lt;br&gt;イベント:event&lt;br&gt;まとめ:total_memo&lt;br&gt;ユーザー:user" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="6" vertex="1">
+                    <mxGeometry x="10" y="30" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERoneToMany;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="13" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="480" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="Exercisesテーブル" style="swimlane;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="240" width="200" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="天気:weather&lt;br&gt;距離:distance&lt;br&gt;サイト:sight&lt;br&gt;メモ:memo&lt;br&gt;日誌:diary&lt;br&gt;ユーザー:user" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="13" vertex="1">
+                    <mxGeometry x="10" y="32" width="90" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Scoresテーブル" style="swimlane;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="390" width="200" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="エンド:end&lt;br&gt;１射目:first&lt;br&gt;２射目:second&lt;br&gt;３射目:third&lt;br&gt;４射目:forth&lt;br&gt;５射目:fifth&lt;br&gt;６射目:sixth&lt;br&gt;合計:endtotal&lt;br&gt;累計:groundtotal&lt;br&gt;練習:exercise&lt;br&gt;ユーザー:user" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="16" vertex="1">
+                    <mxGeometry x="9" y="25" width="100" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Commentsテーブル" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="627" y="70" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="反応:reaction&lt;br&gt;テキスト:text&lt;br&gt;日誌:dairy&lt;br&gt;ユーザー:user" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="24">
+                    <mxGeometry x="10" y="40" width="90" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
