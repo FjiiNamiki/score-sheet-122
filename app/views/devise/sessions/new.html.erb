@@ -1,4 +1,12 @@
-<h2>Log in</h2>
+<header id="header-wrapper">
+  <%= link_to root_path, id:"root-path" do %>
+    <div class="red-title">Score<span class="orange-title">Sheet</span></div>
+  <% end %>
+  <%# <form id="header-where" action="/input/" method="get">
+    <input type="text" id="top-input" name='i' placeholder="検索したいカラム名を入力してください">
+    <button class="search-btn">検索</button>
+  </form> %>
+</header>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">

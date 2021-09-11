@@ -1,10 +1,18 @@
-  <h2 class='service-title'>
-    ScoreSheetへようこそ
-  </h2>
-  <% if user_signed_in? %>
-    <%= link_to "ログアウト", destroy_user_session_path, method: :delete%>
-    <%# <%= link_to "投稿する", new_tweet_path, class: "post" %>
-  <% else %>
-    <%= link_to "ログイン", new_user_session_path, class: "post"%>
-    <%= link_to "新規登録", new_user_registration_path, class: "post"%>
+<header id="header-wrapper">
+  <%= link_to root_path, id:"root-path" do %>
+    <div class="red-title">Score<span class="orange-title">Sheet</span></div>
   <% end %>
+  <%# <form id="header-where" action="/input/" method="get">
+    <input type="text" id="top-input" name='i' placeholder="検索したいカラム名を入力してください">
+    <button class="search-btn">検索</button>
+  </form> %>
+  <ul class="header-right">
+    <% if user_signed_in? %>
+      <li><%= link_to '投稿する',  "#", class: 'post-btn' %></li>
+      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+    <% else %>
+      <li><%= link_to 'ログイン', new_user_session_path, class: 'login' %></li>
+      <li><%= link_to '新規登録', new_user_registration_path, class: 'signup' %></li>
+    <% end %>
+  </ul>
+</header>
