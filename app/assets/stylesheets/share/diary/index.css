@@ -1,0 +1,28 @@
+.diary-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.diary-lists>.list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+.diary-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+}
+
+.diary-date {
+  font-size: 2.5vh;
+}
+
+.diary-description {
+  font-size: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+}

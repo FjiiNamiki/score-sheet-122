@@ -1,6 +1,6 @@
 class DiariesController < ApplicationController
   def index
-    @diaries = Diary.all
+    @diaries = Diary.order  ("created_at DESC")
   end
 
   def new
