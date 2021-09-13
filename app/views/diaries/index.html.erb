@@ -16,4 +16,23 @@
     <% end %>
   </ul>
 </header>
+</body>
+  <ul class='diary-lists'>
+    <% @diaries.each do |diary| %>
+      <li class='list'>
+        <%= link_to"#" do %>
+          <div class='diary-info'>
+            <h3 class='diary-date'>
+              <%= diary.date %><br>
+              <%= diary.user_id %>さんの練習
+            </h3>
+            <div class='diary-description'>
+              <%= diary.total_memo %>
+            </div>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</body>
 
