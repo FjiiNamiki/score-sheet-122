@@ -20,7 +20,8 @@ class DiariesController < ApplicationController
   end
 
   def show
-    
+    @exercise = Exercise.new
+    @exercises = @diary.exercises.includes(:user)
   end
 
   def edit
