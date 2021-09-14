@@ -1,0 +1,28 @@
+<header id="header-wrapper">
+  <%= link_to root_path, id:"root-path" do %>
+    <div class="red-title"><span class="white-title">S</span><span class="black-title">c</span><span class="blue-title">o</span>r<span class="golde-title">eS</span>h<span class="blue-title">e</span><span class="black-title">e</span><span class="white-title">t</span></div>
+  <% end %>
+  <%# <form id="header-where" action="/input/" method="get">
+    <input type="text" id="top-input" name='i' placeholder="検索したいカラム名を入力してください">
+    <button class="search-btn">検索</button>
+  </form> %>
+</header>
+
+<div class="diary-show">
+  <div class="diary-box">
+    <h2 class="name">
+      <%= @diary.date %><br>
+      <%= @diary.place %><br>
+      <%= @diary.user.nickname %>さんの練習
+    </h2>
+    <div class="diary-description-content">
+      <span class="diary-total_memo">
+        <%= @diary.total_memo %>
+      </span>
+    </div>
+    <% if current_user.id == @diary.user_id %>
+      <%= link_to '日誌の編集', edit_diary_path(@diary.id), method: :get, class: "diary-red-btn" %>
+      <%= link_to "削除", diary_path(@diary.id), method: :delete, class:"diary-destroy" %>
+    <% end %>
+  </div>
+</div>

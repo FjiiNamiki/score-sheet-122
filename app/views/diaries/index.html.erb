@@ -20,7 +20,7 @@
   <ul class='diary-lists'>
     <% @diaries.each do |diary| %>
       <li class='list'>
-        <%= link_to"#" do %>
+        <%= link_to(diary_path(diary.id), method: :get) do %>
           <div class='diary-info'>
             <h3 class='diary-date'>
               <%= diary.date %><br>
