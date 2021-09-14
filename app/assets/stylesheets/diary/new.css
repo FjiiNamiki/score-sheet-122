@@ -19,3 +19,26 @@
   line-height: 60px;
   padding: 0 5px;
 }
+
+.edit-btn-contents {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.edit-btn {
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  width: 50%;
+  height: 50px;
+  font-size: 14px;
+  margin-bottom: 4vh;
+}
+
+.back-btn {
+  color: red;
+  padding: 15px 35%;
+  text-decoration: none;
+}
