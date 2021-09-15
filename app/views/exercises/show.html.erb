@@ -1,0 +1,45 @@
+<header id="header-wrapper">
+  <%= link_to root_path, id:"root-path" do %>
+    <div class="red-title"><span class="white-title">S</span><span class="black-title">c</span><span class="blue-title">o</span>r<span class="golde-title">eS</span>h<span class="blue-title">e</span><span class="black-title">e</span><span class="white-title">t</span></div>
+  <% end %>
+  <%# <form id="header-where" action="/input/" method="get">
+    <input type="text" id="top-input" name='i' placeholder="検索したいカラム名を入力してください">
+    <button class="search-btn">検索</button>
+  </form> %>
+</header>
+
+<div class="diary-show">
+  <div class="diary-box">
+    <h2 class="name">
+      <%= @exercise.distance.name %><br>
+      天気：<%= @exercise.weather.name %><br>
+    </h2>
+    <%# <ul class='diary-lists'> %>
+    <%#  <% @exercises.each do |exercise| %>
+       <%# <li class='list'>
+          <%#<%= link_to "#" do %>
+            <%#<div class='diary-info'>
+              <%#<h3 class='diary-date'>
+                <%#<%= exercise.weather.name %><%#<br>
+                <%#<%= exercise.distance.name %>
+              <%#</h3>
+              <%#<div class='diary-description'>
+                <%#<%= exercise.memo %>
+              <%#</div>
+            <%#</div>
+          <%#<% end %>
+        <%#</li>
+      <%#<% end %>
+    <%# </ul> %>
+    <div class="diary-description-content">
+      <span class="diary-total_memo">
+        <%= @exercise.memo %>
+      </span>
+    </div>
+    <% if current_user.id == @exercise.user_id %>
+      <%# <%= link_to '練習メニューの追加', new_diary_exercise_path(@diary.id), method: :get, class: "diary-red-btn" %>
+      <%# <%= link_to '練習内容の編集', edit_diary_exercise[@diary.id, @exercise.id], method: :get, class: "diary-red-btn" %> %>
+      <%# <%= link_to "削除", diary_path(@diary.id), method: :delete, class:"diary-destroy" %> %>
+    <% end %>
+  </div>
+</div>

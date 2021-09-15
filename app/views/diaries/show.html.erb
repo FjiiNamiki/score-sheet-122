@@ -18,7 +18,7 @@
     <ul class='diary-lists'>
       <% @exercises.each do |exercise| %>
         <li class='list'>
-          <%= link_to "#" do %>
+          <%= link_to(diary_exercise_path(exercise.id), method: :get) do %>
             <div class='diary-info'>
               <h3 class='diary-date'>
                 <%= exercise.weather.name %><br>

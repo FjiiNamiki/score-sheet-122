@@ -1,4 +1,6 @@
 class ExercisesController < ApplicationController
+  before_action :set_exercise, only: [:edit, :update, :show, :destroy]
+
   def new
     @diary = Diary.find(params[:diary_id])
     @exercise = Exercise.new
@@ -19,13 +21,14 @@ class ExercisesController < ApplicationController
   end
 
   def edit
-    
   end
+
   def update
     if @exercise.update(exercise_params)
       redirect_to action: :show
     else
       render action: :edit
+    end
   end
 
   private
@@ -34,7 +37,7 @@ class ExercisesController < ApplicationController
     params.require(:exercise).permit(:weather_id, :distance_id, :sight, :memo).merge(user_id: current_user.id, diary_id: params[:diary_id])
   end
 
-  def set_diary
+  def set_exercise
     @exercise = Exercise.find(params[:id])
   end
 
