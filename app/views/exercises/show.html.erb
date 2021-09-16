@@ -37,9 +37,9 @@
       </span>
     </div>
     <% if current_user.id == @exercise.user_id %>
-      <%# <%= link_to '練習メニューの追加', new_diary_exercise_path(@diary.id), method: :get, class: "diary-red-btn" %>
-      <%# <%= link_to '練習内容の編集', edit_diary_exercise[@diary.id, @exercise.id], method: :get, class: "diary-red-btn" %> %>
-      <%# <%= link_to "削除", diary_path(@diary.id), method: :delete, class:"diary-destroy" %> %>
+      <%# <%= link_to '練習メニューの追加', new_diary_exercise_path(@diary.id), method: :get, class: "diary-red-btn"%> 
+      <%= link_to '練習内容の編集', edit_diary_exercise_path(@exercise.diary_id,@exercise.id), method: :get, class: "diary-red-btn" %>
+      <%= link_to "削除", diary_exercise_path(@exercise.id), method: :delete, class:"diary-destroy" %>
     <% end %>
   </div>
 </div>

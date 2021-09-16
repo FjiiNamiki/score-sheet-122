@@ -1,5 +1,6 @@
 class ExercisesController < ApplicationController
-  before_action :set_exercise, only: [:edit, :update, :show, :destroy]
+  before_action :set_exercise, only: [:edit, :show, :destroy, :update]
+  before_action :set_exercise_user, only: [:edit, :update, :destroy]
 
   def new
     @diary = Diary.find(params[:diary_id])
@@ -24,11 +25,17 @@ class ExercisesController < ApplicationController
   end
 
   def update
+    @diary = Diary.find(params[:diary_id])
     if @exercise.update(exercise_params)
-      redirect_to action: :show
+      redirect_to "/diaries/#{@diary.id}/exercises/#{@exercise.id}"
     else
       render action: :edit
     end
+  end
+
+  def destroy
+    @exercise.destroy
+    redirect_to root_path
   end
 
   private
@@ -39,6 +46,12 @@ class ExercisesController < ApplicationController
 
   def set_exercise
     @exercise = Exercise.find(params[:id])
+  end
+
+  def set_exercise_user
+    if @exercise.user != current_user
+      redirect_to root_path
+    end
   end
 
 end
