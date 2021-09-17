@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_14_102748) do
+ActiveRecord::Schema.define(version: 2021_09_17_023539) do
 
   create_table "diaries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.date "date", null: false
@@ -34,6 +34,26 @@ ActiveRecord::Schema.define(version: 2021_09_14_102748) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["diary_id"], name: "index_exercises_on_diary_id"
     t.index ["user_id"], name: "index_exercises_on_user_id"
+  end
+
+  create_table "scores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "end_id", null: false
+    t.integer "first_id", null: false
+    t.integer "second_id", null: false
+    t.integer "third_id", null: false
+    t.integer "fourth_id", null: false
+    t.integer "fifth_id", null: false
+    t.integer "sixth_id", null: false
+    t.integer "total", null: false
+    t.integer "ground_total", null: false
+    t.bigint "user_id", null: false
+    t.bigint "diary_id", null: false
+    t.bigint "exercise_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["diary_id"], name: "index_scores_on_diary_id"
+    t.index ["exercise_id"], name: "index_scores_on_exercise_id"
+    t.index ["user_id"], name: "index_scores_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -61,4 +81,7 @@ ActiveRecord::Schema.define(version: 2021_09_14_102748) do
   add_foreign_key "diaries", "users"
   add_foreign_key "exercises", "diaries"
   add_foreign_key "exercises", "users"
+  add_foreign_key "scores", "diaries"
+  add_foreign_key "scores", "exercises"
+  add_foreign_key "scores", "users"
 end

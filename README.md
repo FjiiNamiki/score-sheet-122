@@ -64,6 +64,7 @@ Things you may want to cover:
 
 - has_many :exercises
 - has_many :comments
+- has_many :scores
 - belongs_to :user
 
 ## exercises テーブル
@@ -99,6 +100,7 @@ Things you may want to cover:
 | total              | integer         | null: false                    |
 | ground_total       | integer         | null: false                    |
 | user               | references      | null: false, foreign_key: true |
+| diary              | references      | null: false, foreign_key: true |
 | exercise           | references      | null: false, foreign_key: true |
 
 ### Association
