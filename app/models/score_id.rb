@@ -1,0 +1,9 @@
+class ScoreId < ActiveHash::Base
+  self.data = [
+    { id: 1, name: '--' },
+    { id: 2, name: '女性' },
+    { id: 3, name: '男性' }
+  ]
+  include ActiveHash::Associations
+  has_many :exercise
+end
