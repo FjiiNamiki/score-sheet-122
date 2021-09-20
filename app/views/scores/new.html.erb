@@ -1,0 +1,91 @@
+<header id="header-wrapper">
+  <%= link_to root_path, id:"root-path" do %>
+    <div class="red-title"><span class="white-title">S</span><span class="black-title">c</span><span class="blue-title">o</span>r<span class="golde-title">eS</span>h<span class="blue-title">e</span><span class="black-title">e</span><span class="white-title">t</span></div>
+  <% end %>
+</header>
+
+<%= form_with model: [@diary, @exercise, @score], url: diary_exercise_scores_path, class: 'registration-main', local: true do |f| %>
+<div class='form-wrap'>
+  <div class='form-header'>
+    <h1 class='form-header-text'>
+      記録を残す
+    </h1>
+  </div>
+
+  <%= render 'shared/error_messages', model: f.object %>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+       <label class="form-text">エンド</label>
+       <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:end_id, End.all, :id, :name, {}, {class:"gender-select"})  %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+       <label class="form-text">1</label>
+       <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:first_id, First.all, :id, :name, {}, {class:"gender-select"})  %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+       <label class="form-text">2</label>
+       <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:second_id, Second.all, :id, :name, {}, {class:"gender-select"})  %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+       <label class="form-text">3</label>
+       <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:third_id, Third.all, :id, :name, {}, {class:"gender-select"})  %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+       <label class="form-text">4</label>
+       <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:fourth_id, Fourth.all, :id, :name, {}, {class:"gender-select"})  %>
+  </div>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+       <label class="form-text">5</label>
+       <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:fifth_id, Fifth.all, :id, :name, {}, {class:"gender-select"})  %>
+  </div>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+       <label class="form-text">6</label>
+       <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:sixth_id, Sixth.all, :id, :name, {}, {class:"gender-select"})  %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+       <label class="form-text">合計</label>
+       <span class="form-any">必須</span>
+    </div>
+    <%= f.text_area :total, class:"input-default", id:"total", placeholder:"例) 55", autofocus: true %>
+    <p class='info-text'>※半角数字で入力してください</p>
+  </div>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+       <label class="form-text">グランドトータル</label>
+       <span class="form-any">必須</span>
+    </div>
+    <%= f.text_area :ground_total, class:"input-default", id:"ground_total", placeholder:"例) 330", autofocus: true %>
+    <p class='info-text'>※半角数字で入力してください</p>
+  </div>
+
+  <div class='register-btn'>
+    <%= f.submit "記録！" ,class:"register-red-btn" %>
+  </div>
+<% end %>

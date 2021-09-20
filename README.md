@@ -23,6 +23,9 @@ Things you may want to cover:
 
 * ...
 
+# title
+[![Image from Gyazo](https://i.gyazo.com/459eacfa48ca888aedb607cf4335e493.png)](https://gyazo.com/459eacfa48ca888aedb607cf4335e493)
+
 # テーブル設計
 
 ## users テーブル
@@ -64,6 +67,7 @@ Things you may want to cover:
 
 - has_many :exercises
 - has_many :comments
+- has_many :scores
 - belongs_to :user
 
 ## exercises テーブル
@@ -99,6 +103,7 @@ Things you may want to cover:
 | total              | integer         | null: false                    |
 | ground_total       | integer         | null: false                    |
 | user               | references      | null: false, foreign_key: true |
+| diary              | references      | null: false, foreign_key: true |
 | exercise           | references      | null: false, foreign_key: true |
 
 ### Association
