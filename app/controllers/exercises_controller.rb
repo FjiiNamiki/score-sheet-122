@@ -18,7 +18,8 @@ class ExercisesController < ApplicationController
   end
 
   def show
-    
+    @score = Score.new
+    @scores = @exercise.scores.includes(:user)
   end
 
   def edit

@@ -26,8 +26,20 @@
           <td class="score-value">6</td>
           <td class="score-value">total</td>
           <td class="score-value">ground_total</td>
-          
         </tr>
+        <% @scores.each do |score| %>
+          <tr>
+            <th class="score-item"><%= score.end.name %></th>
+            <td class="score-value"><%= score.first.name %></td>
+            <td class="score-value"><%= score.second.name %></td>
+            <td class="score-value"><%= score.third.name %></td>
+            <td class="score-value"><%= score.fourth.name %></td>
+            <td class="score-value"><%= score.fifth.name %></td>
+            <td class="score-value"><%= score.sixth.name %></td>
+            <td class="score-value"><%= score.total %></td>
+            <td class="score-value"><%= score.ground_total %></td>
+          </tr>
+        <% end %>
       </tbody>
     </table>
     <div class="diary-description-content">
@@ -36,7 +48,7 @@
       </span>
     </div>
     <% if current_user.id == @exercise.user_id %>
-      <%# <%= link_to '練習メニューの追加', new_diary_exercise_path(@diary.id), method: :get, class: "diary-red-btn"%> 
+      <%= link_to 'スコアの追加', new_diary_exercise_score_path(@exercise.diary_id, @exercise.id), method: :get, class: "diary-red-btn"%>
       <%= link_to '練習内容の編集', edit_diary_exercise_path(@exercise.diary_id,@exercise.id), method: :get, class: "diary-red-btn" %>
       <%= link_to "削除", diary_exercise_path(@exercise.id), method: :delete, class:"diary-destroy" %>
     <% end %>

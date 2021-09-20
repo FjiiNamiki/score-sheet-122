@@ -1,4 +1,4 @@
-class ScoreId < ActiveHash::Base
+class Fourth < ActiveHash::Base
   self.data = [
     { id: 1, name: '--', value: nil },
     { id: 2, name: 'X', value: 10 },
