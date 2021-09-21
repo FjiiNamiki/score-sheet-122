@@ -74,3 +74,9 @@
 .post-btn, .login {
   margin-right: 21px;
 }
+
+.top-img {
+  width: 50%;
+  height: 30%;
+  margin: 0 auto;
+}
