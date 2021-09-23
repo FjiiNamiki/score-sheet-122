@@ -78,5 +78,6 @@
 .top-img {
   width: 50%;
   height: 30%;
-  margin: 0 auto;
+  justify-content: center;
+ 
 }
