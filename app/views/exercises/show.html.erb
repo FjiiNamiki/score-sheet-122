@@ -40,16 +40,30 @@
             <td class="score-value"><%= score.ground_total %></td>
           </tr>
         <% end %>
-      </tbody>
-    </table>
-    <div class="diary-description-content">
+    <% if user_signed_in? %>
+      <% if current_user.id == @exercise.user_id %>
+        <%= form_with(model: [@diary, @exercise, @score], url: diary_exercise_scores_path(@exercise.diary_id,@exercise.id), local: true) do |f| %>
+        <%= render 'shared/error_messages', model: f.object %>
+          <tr>
+            <th class="score-item"><%= f.collection_select(:end_id, End.all, :id, :name, {}, {class:"point-select"})  %></th>
+            <td class="score-value"><%= f.collection_select(:first_id, First.all, :id, :name, {}, {class:"point-select"})  %></td>
+            <td class="score-value"><%= f.collection_select(:second_id, Second.all, :id, :name, {}, {class:"point-select"})  %></td>
+            <td class="score-value"><%= f.collection_select(:third_id, Third.all, :id, :name, {}, {class:"point-select"})  %></td>
+            <td class="score-value"><%= f.collection_select(:fourth_id, Fourth.all, :id, :name, {}, {class:"point-select"})  %></td>
+            <td class="score-value"><%= f.collection_select(:fifth_id, Fifth.all, :id, :name, {}, {class:"point-select"})  %></td>
+            <td class="score-value"><%= f.collection_select(:sixth_id, Sixth.all, :id, :name, {}, {class:"point-select"})  %></td>
+            <td class="score-value"><%= f.text_area :total, class:"input-point", id:"total", placeholder:"6射計", autofocus: true %></td>
+            <td class="score-value"><%= f.text_area :ground_total, class:"input-point", id:"ground_total", placeholder:"中間合計", autofocus: true %></td>
+            <td class="score-item"><%= f.submit "点数入力" ,class:"register-blue-btn" %></td>
+          </tr>
+        </table>
+      <div class="diary-description-content">
       <span class="diary-total_memo">
         <%= @exercise.memo %>
       </span>
     </div>
-    <% if user_signed_in? %>
-      <% if current_user.id == @exercise.user_id %>
-        <%= link_to 'スコアの追加', new_diary_exercise_score_path(@exercise.diary_id, @exercise.id), method: :get, class: "diary-red-btn"%>
+
+<% end %>
         <%= link_to '練習内容の編集', edit_diary_exercise_path(@exercise.diary_id,@exercise.id), method: :get, class: "diary-red-btn" %>
         <%= link_to "削除", diary_exercise_path(@exercise.id), method: :delete, class:"diary-destroy" %>
       <% end %>

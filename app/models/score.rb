@@ -10,4 +10,6 @@ class Score < ApplicationRecord
   belongs_to :fifth
   belongs_to :sixth
   belongs_to :end
+
+
 end
