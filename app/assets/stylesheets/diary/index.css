@@ -1,3 +1,10 @@
+.index-main{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .diary-lists {
   width: 100vw;
   display: flex;
