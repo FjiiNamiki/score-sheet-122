@@ -23,11 +23,18 @@
     
     <% @diaries.each do |diary| %>
       <li class='list animate__animated animate__fadeInUp'>
+        <%= link_to(user_path(diary.user.id)) do%>
+        <div class = 'diary-user'>
+          <%= diary.user.nickname %>
+        </div>
+        <% end %>
         <%= link_to(diary_path(diary.id), method: :get) do %>
           <div class='diary-info'>
             <h3 class='diary-date'>
               <%= diary.date %><br>
-              <%= diary.user.nickname %>さんの練習
+
+              <%# <%= diary.user.nickname %>
+              <%# さんの練習 %>
             </h3>
             <div class='diary-description'>
               <%= diary.total_memo %>
