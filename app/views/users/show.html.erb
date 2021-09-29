@@ -11,8 +11,60 @@
 <div class="diary-show">
   <div class="diary-box">
     <h2 class="name">
-      <%= @user.nickname %><br>
+      <%= @user.nickname %>さんのプロフィール<br>
     </h2>
+    <%= @user.introduction %><br>
+    <table  class = "intro">
+      <tbody>
+        <tr>
+          <th class = "intro_title">ハンドル<th>
+          <td class = "intro_users"><%= @user.handle %><td>
+        </tr>
+        <tr>
+          <th class = "intro_title">リム<th>
+          <td class = "intro_users"><%= @user.rim %><td>
+        </tr>
+        <tr>
+          <th class = "intro_title">弦<th>
+          <td class = "intro_users"><%= @user.bowstring %><td>
+        </tr>
+        <tr>
+          <th class = "intro_title">矢<th>
+          <td class = "intro_users"><%= @user.arrow %><td>
+        </tr>
+        <tr>
+          <th class = "intro_title">その他<th>
+          <td class = "intro_users"><%= @user.other %><td>
+        </tr>
+      </tbody>
+    </table>
+    <% if user_signed_in? && current_user.id == @user.id %>
+      <%= link_to 'プロフィールの編集', edit_user_registration_path(@user.id), method: :get, class: "diary-red-btn" %>
+    <% else %>
+    
+    <% end %>
+
+  </div>
+    <ul class='diary-lists'>
+      <% @diaries.each do |diary| %>
+      <li class='list'>
+        <%= link_to(user_path(diary.user.id)) do%>
+        <% end %>
+        <%= link_to(diary_path(diary.id), method: :get) do %>
+          <div class='diary-info'>
+            <h3 class='diary-date'>
+              <%= diary.date %><br>
+            </h3>
+            <div class='diary-description'>
+              <%= diary.total_memo %>
+            </div>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+    </ul>
+
+</div>
 
 
 

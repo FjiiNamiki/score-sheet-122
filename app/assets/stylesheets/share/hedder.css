@@ -64,16 +64,27 @@
   list-style: none;
 }
 
-.post-btn, .logout, .login, .signup {
+.logout, .login, .signup {
   color: white;
   list-style: none;
   border:1px solid white;
   padding: 7px;
 }
 
-.post-btn, .login {
+.login {
   margin-right: 21px;
 }
+
+.greeting{
+  color: white;
+  list-style: none;
+  margin-right: 21px;
+}
+
+.greeting__link{
+  color: white;
+}
+
 
 .top-img {
   width: 50%;

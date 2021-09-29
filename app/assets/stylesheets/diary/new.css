@@ -28,8 +28,8 @@
 
 
 .edit-btn {
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background: #1A3073;
+  border: 1px solid #1A3073;
   color: #fff;
   width: 50%;
   height: 50px;
@@ -38,7 +38,7 @@
 }
 
 .back-btn {
-  color: red;
+  color: #1A3073;
   padding: 15px 35%;
   text-decoration: none;
 }

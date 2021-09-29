@@ -8,7 +8,11 @@
   </form> %>
   <ul class="header-right">
     <% if user_signed_in? %>
-      <li><%= link_to '投稿する', new_diary_path, class: 'post-btn' %></li>
+      <li>
+      <div class = "greeting">
+        こんにちは、
+        <%= link_to current_user.nickname, "/users/#{current_user.id}", class: :greeting__link%>さん
+      </li>
       <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
     <% else %>
       <li><%= link_to 'ログイン', new_user_session_path, class: 'login' %></li>
@@ -19,8 +23,10 @@
 </header>
 <div class = 'index-main'>
   <%= image_tag "scoresheet_title.png", class:"top-img animate__animated animate__fadeInRightBig"%>
+  <div class = "post">
+    <%= link_to '練習開始！', new_diary_path, class: 'post-btn animate__animated animate__fadeInUp' %>
+  </div>
   <ul class='diary-lists'>
-    
     <% @diaries.each do |diary| %>
       <li class='list animate__animated animate__fadeInUp'>
         <%= link_to(user_path(diary.user.id)) do%>
