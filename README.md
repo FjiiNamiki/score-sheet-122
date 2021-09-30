@@ -94,7 +94,22 @@ Basic認証をクリア後トップページに移ります。
 - 練習内容の必要事項を記入して投稿します。
 [![Image from Gyazo](https://i.gyazo.com/26a9c3e0d4da4eb9b75c86f295a2dce0.gif)](https://gyazo.com/26a9c3e0d4da4eb9b75c86f295a2dce0)
 
-### 
+### 練習内容詳細表示
+- 練習日誌の詳細表示画面にその日の練習内容が表示されるので、それをクリックするとその内容の詳細が表示されます。
+[![Image from Gyazo](https://i.gyazo.com/f0e88beada53e1ba873022bb5791043b.gif)](https://gyazo.com/f0e88beada53e1ba873022bb5791043b)
+
+### 練習内容編集機能
+- 投稿したユーザーのみ練習内容の編集をすることができます。そのメニューが終われば内容を編集しす。
+[![Image from Gyazo](https://i.gyazo.com/c57b76046393f28abd688aea365e3bba.gif)](https://gyazo.com/c57b76046393f28abd688aea365e3bba)
+
+- 編集したい内容を記入したら編集ボタンを押して編集完了です。
+[![Image from Gyazo](https://i.gyazo.com/d86ca5ef2da10f9f0bea5bb0c6d35194.gif)](https://gyazo.com/d86ca5ef2da10f9f0bea5bb0c6d35194)
+
+### 練習内容削除機能
+- 投稿したユーザーのみ練習内容を削除できます。間違えて上げてしまった練習は詳細画面の削除ボタンを押せば削除できます。
+[![Image from Gyazo](https://i.gyazo.com/cd24f89770f6ff89b3b2447c8d1e14b1.gif)](https://gyazo.com/cd24f89770f6ff89b3b2447c8d1e14b1)
+
+
 
 
 
