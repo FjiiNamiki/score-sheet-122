@@ -128,8 +128,13 @@ Basic認証をクリア後トップページに移ります。
 - 得点入力はプルダウンから点数を選択し、合計を入力することで表示されます。
 [![Image from Gyazo](https://i.gyazo.com/2839d7a569ce8f5d64ecaace8fcc8e3d.gif)](https://gyazo.com/2839d7a569ce8f5d64ecaace8fcc8e3d)
 
-
-
+# 実装予定の機能
+- 得点の自動計算機能
+- コメント機能
+- 友達登録機能
+- 自己ベスト管理機能
+- アーチェリー場情報投稿機能
+- アーチェリーショップ情報投稿機能
 
 # テーブル設計
 
@@ -231,6 +236,34 @@ Basic認証をクリア後トップページに移ります。
 - belongs_to :diary
 - belongs_to :user
 
-
 # ER図
 [![Image from Gyazo](https://i.gyazo.com/1d908d745ca412c2e01c438bb1ffbdf2.png)](https://gyazo.com/1d908d745ca412c2e01c438bb1ffbdf2)
+
+# 使用技術
+## バックエンド
+- Ruby 2.6.5
+- Ruby on Rails 6.0.4
+
+## フロントエンド
+- HTML
+- CSS
+- JavaScript
+
+## データベース
+- MySQL
+
+## インフラ
+- Seaquel Pro(MySQL)
+
+## Webサーバー
+- Heroku
+
+## ソース管理
+- GitHub, GitHubDesktop
+
+## テスト
+- rspec
+
+## エディタ
+- VSCode
+
