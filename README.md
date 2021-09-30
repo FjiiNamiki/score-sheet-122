@@ -52,10 +52,54 @@ Basic認証をクリア後トップページに移ります。
 - ログイン中のユーザーとは別のユーザー情報も確認できます。その際はそのユーザー情報は編集できないように編集ボタンは表示されません。
 [![Image from Gyazo](https://i.gyazo.com/61e30683c76f97df22be2704b6a8489d.gif)](https://gyazo.com/61e30683c76f97df22be2704b6a8489d)
 
+- ログインしていないユーザーもユーザー情報を閲覧することができます。その際はそのユーザー情報は編集できないように編集ボタンは表示されません。
+[![Image from Gyazo](https://i.gyazo.com/d7427b7cf1f84f240b6ee9b51e665915.gif)](https://gyazo.com/d7427b7cf1f84f240b6ee9b51e665915)
+
 ### ユーザー情報編集機能
--
+- ユーザー詳細表示画面からユーザー編集画面に遷移します。
+[![Image from Gyazo](https://i.gyazo.com/19d3954133212ab8249113d05dc3f22a.gif)](https://gyazo.com/19d3954133212ab8249113d05dc3f22a)
+
+- 必要事項を記入し、ユーザー情報を更新します。
+[![Image from Gyazo](https://i.gyazo.com/65870435b190f5871de76a85f990163e.gif)](https://gyazo.com/65870435b190f5871de76a85f990163e)
+
+## 練習日誌
+### 練習日誌投稿
+- トップページの「練習開始！」ボタンから練習日誌を投稿できます。
+[![Image from Gyazo](https://i.gyazo.com/5aac25d3d8796881ac07d1f8003b2702.gif)](https://gyazo.com/5aac25d3d8796881ac07d1f8003b2702)
+
+- 必要事項を入力し、日誌を投稿します。
+[![Image from Gyazo](https://i.gyazo.com/656e4de3838fbbac797e9926effc509a.gif)](https://gyazo.com/656e4de3838fbbac797e9926effc509a)
+
+### 練習日誌詳細表示
+- 練習日誌はトップページに一覧で表示されています。練習日誌をクリックすると詳細表示画面に移ります。
+[![Image from Gyazo](https://i.gyazo.com/6e22bf71f9d2fc6b7706ae2b626ddeb6.gif)](https://gyazo.com/6e22bf71f9d2fc6b7706ae2b626ddeb6)
+
+- 練習日誌はログイン中のユーザー以外のユーザーも詳細を見ることができます。
+[![Image from Gyazo](https://i.gyazo.com/5917b0884b927da65c53cd9fdf7eeb71.gif)](https://gyazo.com/5917b0884b927da65c53cd9fdf7eeb71)
+
+- 練習日誌はログインしていないユーザーも見ることができます。
+[![Image from Gyazo](https://i.gyazo.com/e5f52ce84a717ac4dd5085a1899086fa.gif)](https://gyazo.com/e5f52ce84a717ac4dd5085a1899086fa)
+
+### 練習日誌編集
+- 練習終了後は総括も兼ねて練習日誌を編集します。詳細画面から編集画面に遷移します。
+
+### 練習日誌削除機能
+- 投稿したユーザーのみ練習日誌を削除できます。
+
+## 練習内容
+### 練習内容記録機能
+- 練習内容を日誌の詳細表示画面から投稿することができます。
+[![Image from Gyazo](https://i.gyazo.com/24c62fb281f48202fb2f18d96fd2bc54.gif)](https://gyazo.com/24c62fb281f48202fb2f18d96fd2bc54)
+
+- 練習内容の必要事項を記入して投稿します。
+[![Image from Gyazo](https://i.gyazo.com/26a9c3e0d4da4eb9b75c86f295a2dce0.gif)](https://gyazo.com/26a9c3e0d4da4eb9b75c86f295a2dce0)
+
+### 
 
 
+
+- 得点入力はプルダウンから点数を選択し、合計を入力することで表示されます。
+[![Image from Gyazo](https://i.gyazo.com/2839d7a569ce8f5d64ecaace8fcc8e3d.gif)](https://gyazo.com/2839d7a569ce8f5d64ecaace8fcc8e3d)
 
 # テーブル設計
 
