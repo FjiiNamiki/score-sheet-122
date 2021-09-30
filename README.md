@@ -113,7 +113,7 @@ abc123
 [![Image from Gyazo](https://i.gyazo.com/f0e88beada53e1ba873022bb5791043b.gif)](https://gyazo.com/f0e88beada53e1ba873022bb5791043b)
 
 ### 練習内容編集機能
-- 投稿したユーザーのみ練習内容の編集をすることができます。そのメニューが終われば内容を編集しす。
+- 投稿したユーザーのみ練習内容の編集をすることができます。そのメニューが終われば内容を編集します。
 [![Image from Gyazo](https://i.gyazo.com/c57b76046393f28abd688aea365e3bba.gif)](https://gyazo.com/c57b76046393f28abd688aea365e3bba)
 
 - 編集したい内容を記入したら編集ボタンを押して編集完了です。
