@@ -8,6 +8,11 @@
 https://score-sheet-122.herokuapp.com/
 
 # テスト用アカウント
+- Basic認証ID
+admin
+- Basic認証パスワード
+2222
+
 - メールアドレス
 ema@ema
 - パスワード
@@ -15,7 +20,40 @@ abc123
 
 # 利用方法
 
-## ユーザー登録
+## トップページ
+Basic認証をクリア後トップページに移ります。
+トップページではJQueryを利用して動きを付けています。
+[![Image from Gyazo](https://i.gyazo.com/5f9ca18b5599f88c83d7933c2fc0e5ba.gif)](https://gyazo.com/5f9ca18b5599f88c83d7933c2fc0e5ba)
+
+## ユーザー関係
+
+### 新規登録
+- トップページから新規登録画面に遷移します。
+[![Image from Gyazo](https://i.gyazo.com/75f8ab734984e93f2025d45a3599bef5.gif)](https://gyazo.com/75f8ab734984e93f2025d45a3599bef5)
+
+- 必要事項を記入して新規登録すれば完了です。
+[![Image from Gyazo](https://i.gyazo.com/d9e33ebd3a576ca03d2e179709b2af78.gif)](https://gyazo.com/d9e33ebd3a576ca03d2e179709b2af78)
+
+### ログアウト
+- またログアウトは以下のようにログアウトボタンで完了します。
+[![Image from Gyazo](https://i.gyazo.com/1222846d1c96e077debebd38cfe40254.gif)](https://gyazo.com/1222846d1c96e077debebd38cfe40254)
+
+### ログイン
+- ログインはまずトップページからログイン画面に遷移します。
+[![Image from Gyazo](https://i.gyazo.com/e2c51e52ed32bdbf97f311b68188b682.gif)](https://gyazo.com/e2c51e52ed32bdbf97f311b68188b682)
+
+- 必要事項を記入すればログインできます。
+[![Image from Gyazo](https://i.gyazo.com/9199394e7a0589a3e8149b4b02daed73.gif)](https://gyazo.com/9199394e7a0589a3e8149b4b02daed73)
+
+### ユーザー詳細情報
+- 画面右上のログイン中ユーザーの名前をクリックするとそのユーザーの詳細情報を確認できます。ユーザー情報画面ではそのユーザーのプロフィール以外にそのユーザーの過去の練習歴を確認できます。
+[![Image from Gyazo](https://i.gyazo.com/fcbc94953814f76f166421542e0626ba.gif)](https://gyazo.com/fcbc94953814f76f166421542e0626ba)
+
+- ログイン中のユーザーとは別のユーザー情報も確認できます。その際はそのユーザー情報は編集できないように編集ボタンは表示されません。
+[![Image from Gyazo](https://i.gyazo.com/61e30683c76f97df22be2704b6a8489d.gif)](https://gyazo.com/61e30683c76f97df22be2704b6a8489d)
+
+### ユーザー情報編集機能
+-
 
 
 
