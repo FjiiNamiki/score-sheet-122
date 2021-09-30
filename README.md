@@ -1,30 +1,12 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-# title
+# アプリ名
 [![Image from Gyazo](https://i.gyazo.com/459eacfa48ca888aedb607cf4335e493.png)](https://gyazo.com/459eacfa48ca888aedb607cf4335e493)
+
+# アプリケーション概要
+このアプリではアーチェリーの練習日誌を残すSNS機能が搭載されています。練習日誌では点数の記録だけでなく天候や場所などの細かい情報まで残すことができます。
+
+# URL
+https://score-sheet-122.herokuapp.com/
+
 
 # テーブル設計
 
