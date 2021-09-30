@@ -7,6 +7,17 @@
 # URL
 https://score-sheet-122.herokuapp.com/
 
+# テスト用アカウント
+- メールアドレス
+ema@ema
+- パスワード
+abc123
+
+# 利用方法
+
+## ユーザー登録
+
+
 
 # テーブル設計
 
