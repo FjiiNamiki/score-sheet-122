@@ -8,14 +8,14 @@
 https://score-sheet-122.herokuapp.com/
 
 # テスト用アカウント
-- Basic認証ID
+- Basic認証ID：
 admin
-- Basic認証パスワード
+- Basic認証パスワード：
 2222
 
-- メールアドレス
+- メールアドレス：
 ema@ema
-- パスワード
+- パスワード：
 abc123
 
 # 目指した課題解決
@@ -30,8 +30,7 @@ abc123
 
 # 利用方法および実装機能
 ## トップページ
-Basic認証をクリア後トップページに移ります。
-トップページではJQueryを利用して動きを付けています。
+- Basic認証をクリア後トップページに移ります。トップページではJQueryを利用して動きを付けています。
 [![Image from Gyazo](https://i.gyazo.com/5f9ca18b5599f88c83d7933c2fc0e5ba.gif)](https://gyazo.com/5f9ca18b5599f88c83d7933c2fc0e5ba)
 
 ## ユーザー関係
