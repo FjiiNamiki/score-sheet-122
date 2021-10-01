@@ -252,7 +252,7 @@ abc123
 - MySQL
 
 ## インフラ
-- Seaquel Pro(MySQL)
+- Sequel Pro(MySQL)
 
 ## Webサーバー
 - Heroku
