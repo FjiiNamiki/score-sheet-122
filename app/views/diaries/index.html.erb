@@ -28,7 +28,7 @@
   </div>
   <ul class='diary-lists'>
     <% @diaries.each do |diary| %>
-      <li class='list animate__animated animate__fadeInUp'>
+      <li class='list animate__animated animate__fadeInUp fadeInUpTrigger'>
         <%= link_to(user_path(diary.user.id)) do%>
         <div class = 'diary-user'>
           <%= diary.user.nickname %>
