@@ -9,49 +9,51 @@
 </header>
 
 <%= form_with model: [@diary, @exercise], url: diary_exercise_path, class: 'registration-main', local: true do |f| %>
-<div class='form-wrap'>
-  <div class='form-header'>
-    <h1 class='form-header-text'>
-      練習記録を編集する
-    </h1>
-  </div>
-
-  <%= render 'shared/error_messages', model: f.object %>
-
-  <div class="form-group">
-    <div class='form-text-wrap'>
-       <label class="form-text">天気</label>
-       <span class="indispensable">必須</span>
+  <div class='form-wrap'>
+    <div class='form-header'>
+      <h1 class='form-header-text'>
+        練習記録を編集する
+      </h1>
     </div>
-    <%= f.collection_select(:weather_id, Weather.all, :id, :name, {}, {class:"gender-select"})  %>
-  </div>
 
-  <div class="form-group">
-    <div class='form-text-wrap'>
-       <label class="form-text">距離</label>
-       <span class="indispensable">必須</span>
+    <%= render 'shared/error_messages', model: f.object %>
+
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">天気</label>
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.collection_select(:weather_id, Weather.all, :id, :name, {}, {class:"gender-select"})  %>
     </div>
-    <%= f.collection_select(:distance_id, Distance.all, :id, :name, {}, {class:"gender-select"})  %>
-  </div>
 
-  <div class="form-group">
-    <div class='form-text-wrap'>
-       <label class="form-text">サイト</label>
-       <span class="form-any">任意</span>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">距離</label>
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.collection_select(:distance_id, Distance.all, :id, :name, {}, {class:"gender-select"})  %>
     </div>
-    <%= f.text_area :sight, class:"input-default", id:"sight", placeholder:"例) 5.5", autofocus: true %>
-    <p class='info-text'>※半角数字で入力してください</p>
-  </div>
 
-  <div class="form-group">
-    <div class='form-text-wrap'>
-       <label class="form-text">練習メモ</label>
-       <span class="form-any">任意</span>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">サイト</label>
+        <span class="form-any">任意</span>
+      </div>
+      <%= f.text_area :sight, class:"input-default", id:"sight", placeholder:"例) 5.5", autofocus: true %>
+      <p class='info-text'>※半角数字で入力してください</p>
     </div>
-    <%= f.text_area :memo, class:"other-text", id:"memo", placeholder:"その他の弓具（1,000文字,7行まで）\n例）調子が良かった。" ,rows:"7" ,maxlength:"1000" %>
-  </div>
 
-  <div class='register-btn'>
-    <%= f.submit "記録！" ,class:"register-red-btn" %>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">練習メモ</label>
+        <span class="form-any">任意</span>
+      </div>
+      <%= f.text_area :memo, class:"other-text", id:"memo", placeholder:"その他の弓具（1,000文字,7行まで）\n例）調子が良かった。" ,rows:"7" ,maxlength:"1000" %>
+    </div>
+
+    <div class="edit-btn-contents">
+      <%= f.submit "記録！" ,class:"edit-btn" %><br>
+      <%=link_to 'もどる', "/diaries/#{@exercise.diary_id}/exercises/#{@exercise.id}", class:"back-btn" %>
+    </div>
   </div>
 <% end %>

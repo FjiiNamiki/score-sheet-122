@@ -6,6 +6,9 @@
     <input type="text" id="top-input" name='i' placeholder="検索したいカラム名を入力してください">
     <button class="search-btn">検索</button>
   </form> %>
+  <ul class="header-right">
+    <%= link_to "#{@exercise.diary.date}#{@exercise.diary.place}の練習日誌に戻る", "/diaries/#{@exercise.diary_id}", class: :greeting__link%>
+  </ul>
 </header>
 
 <div class="diary-show">
