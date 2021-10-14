@@ -35,29 +35,29 @@
       </div>
     </div>
     <div class="form-group">
-        <div class='form-text-wrap'>
-          <label class="form-text">練習(試合)場所</label>
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.text_area :place, class:"input-default", id:"place", placeholder:"例) 浅古アーチェリー場", maxlength:"40" %>
+      <div class='form-text-wrap'>
+        <label class="form-text">練習(試合)場所</label>
+        <span class="indispensable">必須</span>
       </div>
-      <div class="form-group">
-        <div class='form-text-wrap'>
-          <label class="form-text">練習(試合)名</label>
-          <span class="form-any">任意</span>
-        </div>
-        <%= f.text_area :event, class:"input-default", id:"event", placeholder:"例) 国体予選", autofocus: true %>
+      <%= f.text_area :place, class:"input-default", id:"place", placeholder:"例) 浅古アーチェリー場", maxlength:"40" %>
+    </div>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">練習(試合)名</label>
+        <span class="form-any">任意</span>
       </div>
-      <div class="form-group">
-        <div class='form-text-wrap'>
-          <label class="form-text">練習の詳細</label>
-          <span class="form-any">任意</span>
-        </div>
-        <%= f.text_area :total_memo, class:"other-text", id:"total_memo", placeholder:"練習前には目標を、練習後には今日の練習(試合)を振り返ろう（1,000文字,7行まで）\n例）目標：今日こそ300超える！\n結果：フラッグを見ながら射てたので大崩れはしなかった。" ,rows:"7" ,maxlength:"1000" %>
+      <%= f.text_area :event, class:"input-default", id:"event", placeholder:"例) 国体予選", autofocus: true %>
+    </div>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">練習の詳細</label>
+        <span class="form-any">任意</span>
       </div>
-      <div class='register-btn'>
-        <%= f.submit "日誌投稿" ,class:"register-red-btn" %>
-      </div>
+      <%= f.text_area :total_memo, class:"other-text", id:"total_memo", placeholder:"練習前には目標を、練習後には今日の練習(試合)を振り返ろう（1,000文字,7行まで）\n例）目標：今日こそ300超える！\n結果：フラッグを見ながら射てたので大崩れはしなかった。" ,rows:"7" ,maxlength:"1000" %>
+    </div>
+    <div class='register-btn'>
+      <%= f.submit "日誌投稿" ,class:"register-red-btn" %>
     </div>
   </div>
+</div>
 <% end %>

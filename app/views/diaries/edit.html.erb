@@ -31,30 +31,30 @@
       </div>
     </div>
     <div class="form-group">
-        <div class='form-text-wrap'>
-          <label class="form-text">練習(試合)場所</label>
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.text_area :place, class:"input-default", id:"place", placeholder:"例) 浅古アーチェリー場", maxlength:"40" %>
+      <div class='form-text-wrap'>
+        <label class="form-text">練習(試合)場所</label>
+        <span class="indispensable">必須</span>
       </div>
-      <div class="form-group">
-        <div class='form-text-wrap'>
-          <label class="form-text">練習(試合)名</label>
-          <span class="form-any">任意</span>
-        </div>
-        <%= f.text_area :event, class:"input-default", id:"event", placeholder:"例) 国体予選", autofocus: true %>
+      <%= f.text_area :place, class:"input-default", id:"place", placeholder:"例) 浅古アーチェリー場", maxlength:"40" %>
+    </div>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">練習(試合)名</label>
+        <span class="form-any">任意</span>
       </div>
-      <div class="form-group">
-        <div class='form-text-wrap'>
-          <label class="form-text">練習の総括</label>
-          <span class="form-any">任意</span>
-        </div>
-        <%= f.text_area :total_memo, class:"other-text", id:"total_memo", placeholder:"今日の練習(試合)を振り返ろう（1,000文字,7行まで）\n例）今日は総じて風が強かった。\nフラッグを見ながら射てたので大崩れはしなかった。" ,rows:"7" ,maxlength:"1000" %>
+      <%= f.text_area :event, class:"input-default", id:"event", placeholder:"例) 国体予選", autofocus: true %>
+    </div>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">練習の総括</label>
+        <span class="form-any">任意</span>
       </div>
-      <div class="edit-btn-contents">
-        <%= f.submit "日誌更新" ,class:"edit-btn" %><br>
-        <%=link_to 'もどる', "/diaries/#{@diary.id}", class:"back-btn" %>
-      </div>
+      <%= f.text_area :total_memo, class:"other-text", id:"total_memo", placeholder:"今日の練習(試合)を振り返ろう（1,000文字,7行まで）\n例）今日は総じて風が強かった。\nフラッグを見ながら射てたので大崩れはしなかった。" ,rows:"7" ,maxlength:"1000" %>
+    </div>
+    <div class="edit-btn-contents">
+      <%= f.submit "日誌更新" ,class:"edit-btn" %><br>
+      <%=link_to 'もどる', "/diaries/#{@diary.id}", class:"back-btn" %>
+    </div>
     </div>
   </div>
 <% end %>
