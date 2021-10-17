@@ -1,0 +1,22 @@
+<header id="header-wrapper">
+  <%= link_to root_path, id:"root-path" do %>
+    <div class="red-title"><span class="white-title">S</span><span class="black-title">c</span><span class="blue-title">o</span>r<span class="golde-title">eS</span>h<span class="blue-title">e</span><span class="black-title">e</span><span class="white-title">t</span></div>
+  <% end %>
+</header>
+<div class="diary-show">
+  <div class='form-header'>
+    <h1 class='form-header-text'>
+      メニュー登録完了！
+    </h1>
+  </div>
+  <div class="diary-box">
+    <% if user_signed_in? %>
+      <% if current_user.id == @diary.user_id %>
+        <%= link_to '練習メニューの追加', "/diaries/#{@diary.id}", class: "diary-red-btn" %>
+      <% end %>
+    <% else %>
+      <%= link_to 'ログイン', new_user_session_path, class: 'diary-red-btn' %></li>
+      <%= link_to '新規登録', new_user_registration_path, class: 'diary-red-btn' %></li>
+    <% end %>
+  </div>
+</div>
