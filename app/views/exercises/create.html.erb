@@ -11,8 +11,9 @@
   </div>
   <div class="diary-box">
     <% if user_signed_in? %>
-      <% if current_user.id == @diary.user_id %>
-        <%= link_to '練習メニューの追加', "/diaries/#{@diary.id}", class: "diary-red-btn" %>
+      <% if current_user.id == @exercise.user_id %>
+        <%= link_to '練習メニューの詳細を記録する', "/diaries/#{@diary.id}/exercises/#{@exercise.id}", class: "diary-red-btn" %>
+        <%= link_to '本日の練習メニュー一覧に戻る', "/diaries/#{@diary.id}", class: "diary-red-btn" %>
       <% end %>
     <% else %>
       <%= link_to 'ログイン', new_user_session_path, class: 'diary-red-btn' %></li>
