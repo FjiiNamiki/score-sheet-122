@@ -10,9 +10,6 @@ class ExercisesController < ApplicationController
   def create
     @diary = Diary.find(params[:diary_id])
     @exercise = Exercise.new(exercise_params)
-    # if @exercise.save
-    #   redirect_to "/diaries/#{@diary.id}"
-    # else
     unless @exercise.save
       render :new
     end
