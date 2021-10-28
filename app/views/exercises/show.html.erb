@@ -57,12 +57,11 @@
           </tr>
         </table>
       <div class="diary-description-content">
-      <span class="diary-total_memo">
-        <%= @exercise.memo %>
-      </span>
-    </div>
-
-<% end %>
+        <span class="diary-total_memo">
+          <%= @exercise.memo %>
+        </span>
+      </div>
+        <% end %>
         <%= link_to '練習内容の編集', edit_diary_exercise_path(@exercise.diary_id,@exercise.id), method: :get, class: "diary-red-btn" %>
         <%= link_to "削除", diary_exercise_path(@exercise.id), method: :delete, class:"diary-destroy" %>
       <% end %>
