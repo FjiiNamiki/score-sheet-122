@@ -237,6 +237,9 @@ abc123
 
 ## relationship テーブル
 
+| Column       | Type       | Options                        |
+
+
 
 # ER図
 [![Image from Gyazo](https://i.gyazo.com/1d908d745ca412c2e01c438bb1ffbdf2.png)](https://gyazo.com/1d908d745ca412c2e01c438bb1ffbdf2)
