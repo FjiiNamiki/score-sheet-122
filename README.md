@@ -236,8 +236,8 @@ abc123
 - belongs_to :user
 
 ## relationship テーブル
-
 | Column       | Type       | Options                        |
+| ------------ | ---------- | ------------------------------ |
 
 
 
