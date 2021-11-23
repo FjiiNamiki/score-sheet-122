@@ -241,7 +241,7 @@ abc123
 |   |     |                    |
 |   |     |                    |
 
-### Association
+### Associationテーブル
 - belongs_to :user
 
 # ER図
