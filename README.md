@@ -244,6 +244,7 @@ abc123
 ### Associationテーブル
 - belongs_to :user
 
+
 # ER図
 [![Image from Gyazo](https://i.gyazo.com/1d908d745ca412c2e01c438bb1ffbdf2.png)](https://gyazo.com/1d908d745ca412c2e01c438bb1ffbdf2)
 
