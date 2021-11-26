@@ -241,6 +241,7 @@ abc123
 |   |     |                    |
 |   |     |                    |
 
+
 ### Associationテーブル
 - belongs_to :user
 
